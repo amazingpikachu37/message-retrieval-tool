@@ -61,7 +61,7 @@ function loadChatData(i) {
 	if(i == lastChatFile) suffix = '?v=' + Date.now();
 
 	// Load this chat data file
-	loadJSON("data/chat" +filesToLoad[i]+ ".json" +suffix, function(data) {
+	loadJSON("https://raw.githubusercontent.com/amazingpikachu37/lc_data/master/all_updates/chat" +filesToLoad[i]+ ".json" +suffix, function(data) {
 		chat.push.apply(chat, data);
 
 		// Recurse to load next chat data file
